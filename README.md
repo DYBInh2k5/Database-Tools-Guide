@@ -44,3 +44,6 @@ Bao gồm cả các nền tảng hiện đại như Firebase, Supabase, Neon, Pl
 2. Vào Settings > Pages của repo, chọn `Deploy from a branch`.
 3. Chọn branch `gh-pages` và folder `/ (root)`.
 4. Push code lên `main`, workflow `deploy-pages.yml` sẽ tự publish thư mục `site/` lên `gh-pages`.
+5. Mở đúng URL Pages: `https://dybinh2k5.github.io/Database-Tools-Guide/`.
+
+Lưu ý: nếu bạn mở URL repo `https://github.com/DYBInh2k5/Database-Tools-Guide` thì GitHub sẽ hiển thị README (đây là trang code, không phải trang Pages).
