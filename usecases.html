@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Database Use Cases</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="container">
+      <div class="topbar">
+        <div class="logo">Use Cases</div>
+        <nav>
+          <a href="index.html">Trang chủ</a>
+          <a href="relational.html">SQL</a>
+          <a href="nosql.html">NoSQL</a>
+          <a href="devtools.html">Dev Tools</a>
+          <a href="compare.html">Compare</a>
+          <a href="usecases.html">Use Cases</a>
+          <a href="cloud.html">Cloud</a>
+          <a href="installation.html">Cài đặt</a>
+          <a href="alltools.html">All Tools</a>
+        </nav>
+      </div>
+      <section class="hero">
+        <h1>Chọn Database theo bài toán cụ thể</h1>
+        <p>Danh sách gợi ý nhanh để ra quyết định kiến trúc ban đầu.</p>
+      </section>
+    </header>
+
+    <main class="container">
+      <section class="grid">
+        <article class="card">
+          <h3>Ecommerce / ERP / CRM</h3>
+          <p><strong>Gợi ý:</strong> PostgreSQL hoặc MySQL, thêm Redis cho cache.</p>
+        </article>
+        <article class="card">
+          <h3>Realtime feed / profile động</h3>
+          <p><strong>Gợi ý:</strong> MongoDB hoặc Couchbase; thêm OpenSearch nếu cần search.</p>
+        </article>
+        <article class="card">
+          <h3>Analytics logs</h3>
+          <p><strong>Gợi ý:</strong> OpenSearch cho tìm kiếm; InfluxDB cho metrics/time-series.</p>
+        </article>
+        <article class="card">
+          <h3>Anti-fraud / Recommendation</h3>
+          <p><strong>Gợi ý:</strong> Neo4j cho quan hệ đồ thị, kết hợp SQL cho nghiệp vụ lõi.</p>
+        </article>
+        <article class="card">
+          <h3>Scale đa region</h3>
+          <p><strong>Gợi ý:</strong> CockroachDB, TiDB, Cassandra hoặc ScyllaDB.</p>
+        </article>
+        <article class="card">
+          <h3>Serverless trên AWS</h3>
+          <p><strong>Gợi ý:</strong> DynamoDB hoặc Aurora Serverless tùy kiểu truy vấn.</p>
+        </article>
+      </section>
+    </main>
+
+    <footer class="container">Luôn benchmark bằng dữ liệu thật trước khi chốt hạ tầng.</footer>
+  </body>
+</html>

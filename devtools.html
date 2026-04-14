@@ -1,0 +1,255 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Công cụ Database cho Dev</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="container">
+      <div class="topbar">
+        <div class="logo">Database Dev Tools</div>
+        <nav>
+          <a href="index.html">Trang chủ</a>
+          <a href="relational.html">SQL</a>
+          <a href="nosql.html">NoSQL</a>
+          <a href="compare.html">Compare</a>
+          <a href="usecases.html">Use Cases</a>
+          <a href="cloud.html">Cloud</a>
+          <a href="installation.html">Cài đặt</a>
+          <a href="alltools.html">All Tools</a>
+        </nav>
+      </div>
+      <section class="hero">
+        <h1>Công cụ quản trị, migration và monitoring</h1>
+        <p>Trang tổng hợp để setup workflow từ local đến production.</p>
+      </section>
+    </header>
+
+    <main class="container">
+      <h2 class="section-title">SQL Client và GUI</h2>
+      <section class="list">
+        <article class="item">
+          <div>
+            <strong>DBeaver</strong>
+            <div class="meta">Đa nền tảng, hỗ trợ nhiều hệ quản trị CSDL.</div>
+          </div>
+          <div class="btn-row">
+            <a class="btn primary" href="https://dbeaver.io/download/" target="_blank" rel="noreferrer">Download</a>
+            <a class="btn secondary" href="https://dbeaver.com/docs/" target="_blank" rel="noreferrer">Docs</a>
+          </div>
+        </article>
+
+        <article class="item">
+          <div>
+            <strong>DataGrip</strong>
+            <div class="meta">IDE cho database trong hệ sinh thái JetBrains.</div>
+          </div>
+          <div class="btn-row">
+            <a class="btn primary" href="https://www.jetbrains.com/datagrip/download/" target="_blank" rel="noreferrer">Download</a>
+            <a class="btn secondary" href="https://www.jetbrains.com/help/datagrip/" target="_blank" rel="noreferrer">Docs</a>
+          </div>
+        </article>
+
+        <article class="item">
+          <div>
+            <strong>TablePlus</strong>
+            <div class="meta">SQL client gọn nhẹ, UI sạch, thao tác nhanh.</div>
+          </div>
+          <div class="btn-row">
+            <a class="btn primary" href="https://tableplus.com/download" target="_blank" rel="noreferrer">Download</a>
+            <a class="btn secondary" href="https://docs.tableplus.com/" target="_blank" rel="noreferrer">Docs</a>
+          </div>
+        </article>
+
+        <article class="item">
+          <div>
+            <strong>pgAdmin</strong>
+            <div class="meta">Công cụ quản trị chính thức cho PostgreSQL.</div>
+          </div>
+          <div class="btn-row">
+            <a class="btn primary" href="https://www.pgadmin.org/download/" target="_blank" rel="noreferrer">Download</a>
+            <a class="btn secondary" href="https://www.pgadmin.org/docs/" target="_blank" rel="noreferrer">Docs</a>
+          </div>
+        </article>
+
+        <article class="item">
+          <div>
+            <strong>SSMS</strong>
+            <div class="meta">SQL Server Management Studio cho quản trị SQL Server.</div>
+          </div>
+          <div class="btn-row">
+            <a class="btn primary" href="https://learn.microsoft.com/sql/ssms/download-sql-server-management-studio-ssms" target="_blank" rel="noreferrer">Download</a>
+            <a class="btn secondary" href="https://learn.microsoft.com/sql/ssms/" target="_blank" rel="noreferrer">Docs</a>
+          </div>
+        </article>
+
+        <article class="item">
+          <div>
+            <strong>Beekeeper Studio</strong>
+            <div class="meta">SQL editor hiện đại, nhẹ và dễ dùng cho nhiều loại database.</div>
+          </div>
+          <div class="btn-row">
+            <a class="btn primary" href="https://www.beekeeperstudio.io/get" target="_blank" rel="noreferrer">Download</a>
+            <a class="btn secondary" href="https://docs.beekeeperstudio.io/" target="_blank" rel="noreferrer">Docs</a>
+          </div>
+        </article>
+
+        <article class="item">
+          <div>
+            <strong>DbVisualizer</strong>
+            <div class="meta">SQL client đa năng cho enterprise với nhiều driver và công cụ quản trị.</div>
+          </div>
+          <div class="btn-row">
+            <a class="btn primary" href="https://www.dbvis.com/download/" target="_blank" rel="noreferrer">Download</a>
+            <a class="btn secondary" href="https://www.dbvis.com/docs/" target="_blank" rel="noreferrer">Docs</a>
+          </div>
+        </article>
+      </section>
+
+      <h2 class="section-title">Migration / Versioning</h2>
+      <section class="list">
+        <article class="item">
+          <div>
+            <strong>Flyway</strong>
+            <div class="meta">Quản lý schema theo version, dễ đưa vào CI/CD.</div>
+          </div>
+          <div class="btn-row">
+            <a class="btn primary" href="https://documentation.red-gate.com/fd/download-flyway-184127476.html" target="_blank" rel="noreferrer">Download</a>
+            <a class="btn secondary" href="https://documentation.red-gate.com/fd" target="_blank" rel="noreferrer">Docs</a>
+          </div>
+        </article>
+
+        <article class="item">
+          <div>
+            <strong>Liquibase</strong>
+            <div class="meta">Changelog XML/YAML/SQL, linh hoạt cho enterprise.</div>
+          </div>
+          <div class="btn-row">
+            <a class="btn primary" href="https://www.liquibase.com/download" target="_blank" rel="noreferrer">Download</a>
+            <a class="btn secondary" href="https://docs.liquibase.com/" target="_blank" rel="noreferrer">Docs</a>
+          </div>
+        </article>
+
+        <article class="item">
+          <div>
+            <strong>Alembic</strong>
+            <div class="meta">Migration phổ biến cho Python + SQLAlchemy.</div>
+          </div>
+          <div class="btn-row">
+            <a class="btn primary" href="https://pypi.org/project/alembic/" target="_blank" rel="noreferrer">Package</a>
+            <a class="btn secondary" href="https://alembic.sqlalchemy.org/" target="_blank" rel="noreferrer">Docs</a>
+          </div>
+        </article>
+
+        <article class="item">
+          <div>
+            <strong>Prisma Migrate</strong>
+            <div class="meta">Migration cho Node.js/TypeScript khi dùng Prisma ORM.</div>
+          </div>
+          <div class="btn-row">
+            <a class="btn primary" href="https://www.prisma.io/docs/orm/prisma-migrate" target="_blank" rel="noreferrer">Guide</a>
+            <a class="btn secondary" href="https://www.prisma.io/docs/" target="_blank" rel="noreferrer">Docs</a>
+          </div>
+        </article>
+
+        <article class="item">
+          <div>
+            <strong>Atlas (Ariga)</strong>
+            <div class="meta">Database schema-as-code, diff schema và migration tự động.</div>
+          </div>
+          <div class="btn-row">
+            <a class="btn primary" href="https://atlasgo.io/getting-started" target="_blank" rel="noreferrer">Get Started</a>
+            <a class="btn secondary" href="https://atlasgo.io/concepts" target="_blank" rel="noreferrer">Docs</a>
+          </div>
+        </article>
+
+        <article class="item">
+          <div>
+            <strong>Sqitch</strong>
+            <div class="meta">Database change management không phụ thuộc thứ tự số migration file.</div>
+          </div>
+          <div class="btn-row">
+            <a class="btn primary" href="https://sqitch.org/download/" target="_blank" rel="noreferrer">Download</a>
+            <a class="btn secondary" href="https://sqitch.org/docs/" target="_blank" rel="noreferrer">Docs</a>
+          </div>
+        </article>
+      </section>
+
+      <h2 class="section-title">Monitoring</h2>
+      <section class="list">
+        <article class="item">
+          <div>
+            <strong>Grafana</strong>
+            <div class="meta">Dashboard metric, kết hợp Prometheus cho quan sát tổng thể.</div>
+          </div>
+          <div class="btn-row">
+            <a class="btn primary" href="https://grafana.com/grafana/download" target="_blank" rel="noreferrer">Download</a>
+            <a class="btn secondary" href="https://grafana.com/docs/grafana/latest/" target="_blank" rel="noreferrer">Docs</a>
+          </div>
+        </article>
+
+        <article class="item">
+          <div>
+            <strong>Prometheus</strong>
+            <div class="meta">Thu thập metric time-series, căn bản cho observability.</div>
+          </div>
+          <div class="btn-row">
+            <a class="btn primary" href="https://prometheus.io/download/" target="_blank" rel="noreferrer">Download</a>
+            <a class="btn secondary" href="https://prometheus.io/docs/introduction/overview/" target="_blank" rel="noreferrer">Docs</a>
+          </div>
+        </article>
+
+        <article class="item">
+          <div>
+            <strong>Percona Monitoring and Management (PMM)</strong>
+            <div class="meta">Quan sát chuyên sâu cho MySQL/PostgreSQL/MongoDB.</div>
+          </div>
+          <div class="btn-row">
+            <a class="btn primary" href="https://www.percona.com/software/pmm" target="_blank" rel="noreferrer">Product</a>
+            <a class="btn secondary" href="https://docs.percona.com/percona-monitoring-and-management/" target="_blank" rel="noreferrer">Docs</a>
+          </div>
+        </article>
+
+        <article class="item">
+          <div>
+            <strong>Elastic Stack</strong>
+            <div class="meta">Thu thập log, phân tích và trực quan hóa trên Kibana.</div>
+          </div>
+          <div class="btn-row">
+            <a class="btn primary" href="https://www.elastic.co/downloads/" target="_blank" rel="noreferrer">Download</a>
+            <a class="btn secondary" href="https://www.elastic.co/guide/index.html" target="_blank" rel="noreferrer">Docs</a>
+          </div>
+        </article>
+
+        <article class="item">
+          <div>
+            <strong>Datadog</strong>
+            <div class="meta">APM + logs + metrics toàn diện, phù hợp môi trường production lớn.</div>
+          </div>
+          <div class="btn-row">
+            <a class="btn primary" href="https://www.datadoghq.com/" target="_blank" rel="noreferrer">Product</a>
+            <a class="btn secondary" href="https://docs.datadoghq.com/" target="_blank" rel="noreferrer">Docs</a>
+          </div>
+        </article>
+
+        <article class="item">
+          <div>
+            <strong>New Relic</strong>
+            <div class="meta">Quan sát ứng dụng và database theo hướng full-stack observability.</div>
+          </div>
+          <div class="btn-row">
+            <a class="btn primary" href="https://newrelic.com/" target="_blank" rel="noreferrer">Product</a>
+            <a class="btn secondary" href="https://docs.newrelic.com/" target="_blank" rel="noreferrer">Docs</a>
+          </div>
+        </article>
+      </section>
+    </main>
+
+    <footer class="container">Tip: Bắt đầu với SQL client + migration trước, sau đó mới setup monitoring đầy đủ.</footer>
+  </body>
+</html>

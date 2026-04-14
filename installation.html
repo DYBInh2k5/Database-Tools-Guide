@@ -1,0 +1,212 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hướng dẫn cài đặt và sử dụng</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="container">
+      <div class="topbar">
+        <div class="logo">Cài đặt và Cách dùng</div>
+        <nav>
+          <a href="index.html">Trang chủ</a>
+          <a href="relational.html">SQL</a>
+          <a href="nosql.html">NoSQL</a>
+          <a href="devtools.html">Dev Tools</a>
+          <a href="compare.html">Compare</a>
+          <a href="usecases.html">Use Cases</a>
+          <a href="cloud.html">Cloud</a>
+          <a href="installation.html">Cài đặt</a>
+          <a href="alltools.html">All Tools</a>
+        </nav>
+      </div>
+      <section class="hero">
+        <h1>Hướng dẫn cài đặt, sử dụng và extension tương thích</h1>
+        <p>Dùng trang này như checklist triển khai: cài công cụ, kết nối trong VS Code, và thao tác cơ bản.</p>
+      </section>
+    </header>
+
+    <main class="container">
+      <h2 class="section-title">Nhóm SQL</h2>
+      <section class="list">
+        <article class="item">
+          <div>
+            <strong>PostgreSQL</strong>
+            <div class="meta">Cài: installer hoặc Docker. Dùng nhanh: tạo database, user, mở psql hoặc GUI để query.</div>
+          </div>
+          <div class="btn-row">
+            <a class="btn secondary" href="https://www.postgresql.org/download/" target="_blank" rel="noreferrer">Cài đặt</a>
+            <a class="btn secondary" href="https://www.postgresql.org/docs/" target="_blank" rel="noreferrer">Docs</a>
+          </div>
+        </article>
+
+        <article class="item">
+          <div>
+            <strong>MySQL / MariaDB</strong>
+            <div class="meta">Cài: MySQL Installer hoặc MariaDB Installer. Dùng nhanh: tạo schema, cấp quyền user ứng dụng.</div>
+          </div>
+          <div class="btn-row">
+            <a class="btn secondary" href="https://dev.mysql.com/downloads/mysql/" target="_blank" rel="noreferrer">MySQL</a>
+            <a class="btn secondary" href="https://mariadb.org/download/" target="_blank" rel="noreferrer">MariaDB</a>
+          </div>
+        </article>
+
+        <article class="item">
+          <div>
+            <strong>SQL Server</strong>
+            <div class="meta">Cài: SQL Server Developer + SSMS. Dùng nhanh: tạo login, database, kiểm tra bằng truy vấn SELECT.</div>
+          </div>
+          <div class="btn-row">
+            <a class="btn secondary" href="https://www.microsoft.com/sql-server/sql-server-downloads" target="_blank" rel="noreferrer">Cài đặt</a>
+            <a class="btn secondary" href="https://learn.microsoft.com/sql/sql-server/" target="_blank" rel="noreferrer">Docs</a>
+          </div>
+        </article>
+
+        <article class="item">
+          <div>
+            <strong>YugabyteDB / CockroachDB / TiDB</strong>
+            <div class="meta">Cài: chạy local cluster hoặc cloud trial. Dùng nhanh: kiểm tra tương thích SQL và latency đa vùng.</div>
+          </div>
+          <div class="btn-row">
+            <a class="btn secondary" href="https://docs.yugabyte.com/" target="_blank" rel="noreferrer">YugabyteDB</a>
+            <a class="btn secondary" href="https://www.cockroachlabs.com/docs/" target="_blank" rel="noreferrer">CockroachDB</a>
+            <a class="btn secondary" href="https://docs.pingcap.com/tidb/stable" target="_blank" rel="noreferrer">TiDB</a>
+          </div>
+        </article>
+      </section>
+
+      <h2 class="section-title">Nhóm NoSQL</h2>
+      <section class="list">
+        <article class="item">
+          <div>
+            <strong>MongoDB</strong>
+            <div class="meta">Cài: MongoDB Community. Dùng nhanh: tạo collection, index, chạy truy vấn filter/sort.</div>
+          </div>
+          <div class="btn-row">
+            <a class="btn secondary" href="https://www.mongodb.com/try/download/community" target="_blank" rel="noreferrer">Cài đặt</a>
+            <a class="btn secondary" href="https://www.mongodb.com/docs/" target="_blank" rel="noreferrer">Docs</a>
+          </div>
+        </article>
+
+        <article class="item">
+          <div>
+            <strong>Redis</strong>
+            <div class="meta">Cài: bản phù hợp hệ điều hành hoặc chạy container. Dùng nhanh: set/get key, TTL, cache API.</div>
+          </div>
+          <div class="btn-row">
+            <a class="btn secondary" href="https://redis.io/downloads/" target="_blank" rel="noreferrer">Cài đặt</a>
+            <a class="btn secondary" href="https://redis.io/docs/latest/" target="_blank" rel="noreferrer">Docs</a>
+          </div>
+        </article>
+
+        <article class="item">
+          <div>
+            <strong>Cassandra / ScyllaDB</strong>
+            <div class="meta">Cài: single-node để thử nghiệm trước. Dùng nhanh: tạo keyspace, table theo query pattern.</div>
+          </div>
+          <div class="btn-row">
+            <a class="btn secondary" href="https://cassandra.apache.org/_/download.html" target="_blank" rel="noreferrer">Cassandra</a>
+            <a class="btn secondary" href="https://www.scylladb.com/download/" target="_blank" rel="noreferrer">ScyllaDB</a>
+          </div>
+        </article>
+
+        <article class="item">
+          <div>
+            <strong>Firebase</strong>
+            <div class="meta">Cài: dùng Firebase Console + Firebase CLI. Dùng nhanh: tạo project, bật Firestore/Auth, cấu hình SDK app.</div>
+          </div>
+          <div class="btn-row">
+            <a class="btn secondary" href="https://firebase.google.com/docs" target="_blank" rel="noreferrer">Docs</a>
+            <a class="btn secondary" href="https://firebase.google.com/docs/cli" target="_blank" rel="noreferrer">Firebase CLI</a>
+          </div>
+        </article>
+
+        <article class="item">
+          <div>
+            <strong>Supabase</strong>
+            <div class="meta">Cài: tạo project trên cloud hoặc chạy local bằng Supabase CLI. Dùng nhanh: tạo bảng, policy RLS, kết nối client SDK.</div>
+          </div>
+          <div class="btn-row">
+            <a class="btn secondary" href="https://supabase.com/docs/guides/local-development" target="_blank" rel="noreferrer">Local Dev</a>
+            <a class="btn secondary" href="https://supabase.com/docs" target="_blank" rel="noreferrer">Docs</a>
+          </div>
+        </article>
+      </section>
+
+      <h2 class="section-title">Extension VS Code tương thích</h2>
+      <section class="compare-wrap">
+        <table class="compare-table">
+          <thead>
+            <tr>
+              <th>Công cụ</th>
+              <th>Extension gợi ý</th>
+              <th>Cách dùng nhanh trong VS Code</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>PostgreSQL</td>
+              <td>SQLTools + PostgreSQL Driver, hoặc PostgreSQL extension</td>
+              <td>Tạo connection, chạy file .sql, lưu snippet query</td>
+            </tr>
+            <tr>
+              <td>MySQL / MariaDB</td>
+              <td>SQLTools + MySQL/MariaDB Driver</td>
+              <td>Tạo profile kết nối, browse schema, chạy query</td>
+            </tr>
+            <tr>
+              <td>SQL Server</td>
+              <td>SQL Server (mssql)</td>
+              <td>Sign-in nếu cần, mở query editor, chạy truy vấn</td>
+            </tr>
+            <tr>
+              <td>MongoDB</td>
+              <td>MongoDB for VS Code</td>
+              <td>Connect cluster/local, chạy playground, xem schema</td>
+            </tr>
+            <tr>
+              <td>Redis</td>
+              <td>Redis for VS Code</td>
+              <td>Kết nối endpoint, duyệt keyspace, test command</td>
+            </tr>
+            <tr>
+              <td>Neo4j</td>
+              <td>Neo4j for VS Code</td>
+              <td>Kết nối graph DB, chạy Cypher, trực quan kết quả</td>
+            </tr>
+            <tr>
+              <td>Firebase</td>
+              <td>Firebase VS Code Extension</td>
+              <td>Quản lý project, rules, functions và deploy từ VS Code</td>
+            </tr>
+            <tr>
+              <td>Supabase</td>
+              <td>Supabase VS Code Extension + SQLTools</td>
+              <td>Quản lý project Supabase và truy vấn PostgreSQL trực tiếp</td>
+            </tr>
+            <tr>
+              <td>Đa hệ CSDL</td>
+              <td>Database Client JDBC hoặc SQLTools</td>
+              <td>Dùng một giao diện để quản lý nhiều loại database</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <h2 class="section-title">Quy trình chuẩn đề xuất</h2>
+      <section class="grid">
+        <article class="card"><h3>1. Cài DB cục bộ</h3><p>Cài bản local hoặc chạy Docker để tạo môi trường dev nhanh.</p></article>
+        <article class="card"><h3>2. Cài extension</h3><p>Cài extension theo loại DB đang dùng để kết nối trực tiếp từ VS Code.</p></article>
+        <article class="card"><h3>3. Tạo migration</h3><p>Dùng Flyway, Liquibase, Alembic hoặc Prisma Migrate ngay từ đầu.</p></article>
+        <article class="card"><h3>4. Bật monitoring</h3><p>Thêm dashboard và cảnh báo sớm trước khi lên production.</p></article>
+      </section>
+    </main>
+
+    <footer class="container">Nếu cần, bạn có thể chuẩn hóa thành checklist onboarding cho toàn team.</footer>
+  </body>
+</html>

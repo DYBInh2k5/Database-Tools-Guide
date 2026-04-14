@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>So sánh Cơ sở dữ liệu</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="container">
+      <div class="topbar">
+        <div class="logo">So sánh Database</div>
+        <nav>
+          <a href="index.html">Trang chủ</a>
+          <a href="relational.html">SQL</a>
+          <a href="nosql.html">NoSQL</a>
+          <a href="devtools.html">Dev Tools</a>
+          <a href="compare.html">Compare</a>
+          <a href="usecases.html">Use Cases</a>
+          <a href="cloud.html">Cloud</a>
+          <a href="installation.html">Cài đặt</a>
+          <a href="alltools.html">All Tools</a>
+        </nav>
+      </div>
+      <section class="hero">
+        <span class="badge">Bảng chọn nhanh</span>
+        <h1>So sánh theo nhu cầu triển khai thực tế</h1>
+        <p>
+          Dùng bảng này để shortlist công nghệ trước khi làm POC. Nên chấm điểm theo
+          tải hệ thống, đội ngũ, chi phí vận hành và yêu cầu nhất quán dữ liệu.
+        </p>
+      </section>
+    </header>
+
+    <main class="container">
+      <h2 class="section-title">Ma trận lựa chọn</h2>
+      <section class="compare-wrap">
+        <table class="compare-table">
+          <thead>
+            <tr>
+              <th>Hệ CSDL</th>
+              <th>Mô hình</th>
+              <th>Dùng tốt khi</th>
+              <th>Mức vận hành</th>
+              <th>Cloud-native</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>PostgreSQL</td>
+              <td>SQL</td>
+              <td>Ứng dụng nghiệp vụ tổng quát, giao dịch chuẩn ACID</td>
+              <td>Trung bình</td>
+              <td>Cao</td>
+            </tr>
+            <tr>
+              <td>MySQL</td>
+              <td>SQL</td>
+              <td>Web app phổ biến, đội ngũ quen hệ sinh thái LAMP</td>
+              <td>Thấp-Trung bình</td>
+              <td>Cao</td>
+            </tr>
+            <tr>
+              <td>SQL Server</td>
+              <td>SQL</td>
+              <td>Doanh nghiệp dùng stack Microsoft</td>
+              <td>Trung bình-Cao</td>
+              <td>Trung bình-Cao</td>
+            </tr>
+            <tr>
+              <td>MongoDB</td>
+              <td>NoSQL Document</td>
+              <td>Schema thay đổi nhanh, release sản phẩm liên tục</td>
+              <td>Trung bình</td>
+              <td>Cao</td>
+            </tr>
+            <tr>
+              <td>Redis</td>
+              <td>In-memory KV</td>
+              <td>Cache, session, queue nhẹ, rate limiting</td>
+              <td>Thấp</td>
+              <td>Cao</td>
+            </tr>
+            <tr>
+              <td>Cassandra / ScyllaDB</td>
+              <td>NoSQL Wide-column</td>
+              <td>Write-heavy, cần độ sẵn sàng và phân tán đa vùng</td>
+              <td>Cao</td>
+              <td>Cao</td>
+            </tr>
+            <tr>
+              <td>Neo4j</td>
+              <td>Graph</td>
+              <td>Recommendation, anti-fraud, đồ thị quan hệ phức tạp</td>
+              <td>Trung bình</td>
+              <td>Trung bình</td>
+            </tr>
+            <tr>
+              <td>InfluxDB</td>
+              <td>Time-series</td>
+              <td>Telemetry, IoT, metric theo thời gian thực</td>
+              <td>Trung bình</td>
+              <td>Cao</td>
+            </tr>
+            <tr>
+              <td>Firebase (Firestore)</td>
+              <td>NoSQL Document (BaaS)</td>
+              <td>Mobile/web app cần realtime + auth + backend ra nhanh</td>
+              <td>Thấp</td>
+              <td>Cao</td>
+            </tr>
+            <tr>
+              <td>Supabase</td>
+              <td>PostgreSQL (BaaS)</td>
+              <td>MVP/startup cần SQL + auth + storage trên một nền tảng</td>
+              <td>Thấp-Trung bình</td>
+              <td>Cao</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <h2 class="section-title">Gợi ý chọn nhanh theo bài toán</h2>
+      <section class="grid">
+        <article class="card">
+          <h3>Web app đa số use case</h3>
+          <p>Bắt đầu với PostgreSQL, bổ sung Redis cho cache.</p>
+        </article>
+        <article class="card">
+          <h3>Log và tìm kiếm</h3>
+          <p>Dùng OpenSearch, tách riêng khỏi OLTP chính.</p>
+        </article>
+        <article class="card">
+          <h3>Realtime & profile</h3>
+          <p>Cân nhắc MongoDB hoặc Couchbase tùy mô hình truy vấn.</p>
+        </article>
+        <article class="card">
+          <h3>Scale phân tán nhiều vùng</h3>
+          <p>Xem CockroachDB, TiDB hoặc Cassandra/ScyllaDB.</p>
+        </article>
+      </section>
+    </main>
+
+    <footer class="container">Mẹo: luôn chạy benchmark với dữ liệu giống production trước khi chốt công nghệ.</footer>
+  </body>
+</html>

@@ -1,0 +1,205 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cơ sở dữ liệu NoSQL</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="container">
+      <div class="topbar">
+        <div class="logo">Cơ sở dữ liệu NoSQL</div>
+        <nav>
+          <a href="index.html">Trang chủ</a>
+          <a href="relational.html">SQL</a>
+          <a href="devtools.html">Dev Tools</a>
+          <a href="compare.html">Compare</a>
+          <a href="usecases.html">Use Cases</a>
+          <a href="cloud.html">Cloud</a>
+          <a href="installation.html">Cài đặt</a>
+          <a href="alltools.html">All Tools</a>
+        </nav>
+      </div>
+      <section class="hero">
+        <h1>NoSQL cho schema linh hoạt và scale ngang</h1>
+        <p>Link tải chính thức và tài liệu để triển khai nhanh theo use case.</p>
+      </section>
+    </header>
+
+    <main class="container">
+      <h2 class="section-title">Công cụ và tài nguyên</h2>
+      <section class="list">
+        <article class="item">
+          <div>
+            <strong>MongoDB Community</strong>
+            <div class="meta">Document database phù hợp schema thay đổi nhanh.</div>
+          </div>
+          <div class="btn-row">
+            <a class="btn primary" href="https://www.mongodb.com/try/download/community" target="_blank" rel="noreferrer">Download</a>
+            <a class="btn secondary" href="https://www.mongodb.com/docs/" target="_blank" rel="noreferrer">Docs</a>
+          </div>
+        </article>
+
+        <article class="item">
+          <div>
+            <strong>Redis</strong>
+            <div class="meta">In-memory key-value rất nhanh cho cache/session/queue nhẹ.</div>
+          </div>
+          <div class="btn-row">
+            <a class="btn primary" href="https://redis.io/downloads/" target="_blank" rel="noreferrer">Download</a>
+            <a class="btn secondary" href="https://redis.io/docs/latest/" target="_blank" rel="noreferrer">Docs</a>
+          </div>
+        </article>
+
+        <article class="item">
+          <div>
+            <strong>Apache Cassandra</strong>
+            <div class="meta">Write-heavy, phân tán đa vùng, độ bền cao.</div>
+          </div>
+          <div class="btn-row">
+            <a class="btn primary" href="https://cassandra.apache.org/_/download.html" target="_blank" rel="noreferrer">Download</a>
+            <a class="btn secondary" href="https://cassandra.apache.org/doc/latest/" target="_blank" rel="noreferrer">Docs</a>
+          </div>
+        </article>
+
+        <article class="item">
+          <div>
+            <strong>OpenSearch</strong>
+            <div class="meta">Search + log analytics, thường dùng kèm database chính.</div>
+          </div>
+          <div class="btn-row">
+            <a class="btn primary" href="https://opensearch.org/downloads.html" target="_blank" rel="noreferrer">Download</a>
+            <a class="btn secondary" href="https://opensearch.org/docs/latest/" target="_blank" rel="noreferrer">Docs</a>
+          </div>
+        </article>
+
+        <article class="item">
+          <div>
+            <strong>Neo4j Community</strong>
+            <div class="meta">Graph database cho recommendation, fraud detection, social graph.</div>
+          </div>
+          <div class="btn-row">
+            <a class="btn primary" href="https://neo4j.com/download-center/" target="_blank" rel="noreferrer">Download</a>
+            <a class="btn secondary" href="https://neo4j.com/docs/" target="_blank" rel="noreferrer">Docs</a>
+          </div>
+        </article>
+
+        <article class="item">
+          <div>
+            <strong>Amazon DynamoDB</strong>
+            <div class="meta">Managed key-value/document service, scale lớn và vận hành đơn giản trên AWS.</div>
+          </div>
+          <div class="btn-row">
+            <a class="btn primary" href="https://aws.amazon.com/dynamodb/" target="_blank" rel="noreferrer">Product</a>
+            <a class="btn secondary" href="https://docs.aws.amazon.com/dynamodb/" target="_blank" rel="noreferrer">Docs</a>
+          </div>
+        </article>
+
+        <article class="item">
+          <div>
+            <strong>Couchbase</strong>
+            <div class="meta">Document + cache + SQL++ query, phù hợp ứng dụng realtime.</div>
+          </div>
+          <div class="btn-row">
+            <a class="btn primary" href="https://www.couchbase.com/downloads/" target="_blank" rel="noreferrer">Download</a>
+            <a class="btn secondary" href="https://docs.couchbase.com/" target="_blank" rel="noreferrer">Docs</a>
+          </div>
+        </article>
+
+        <article class="item">
+          <div>
+            <strong>ScyllaDB</strong>
+            <div class="meta">NoSQL high-performance tương thích Cassandra protocol, latency thấp.</div>
+          </div>
+          <div class="btn-row">
+            <a class="btn primary" href="https://www.scylladb.com/download/" target="_blank" rel="noreferrer">Download</a>
+            <a class="btn secondary" href="https://opensource.docs.scylladb.com/stable/" target="_blank" rel="noreferrer">Docs</a>
+          </div>
+        </article>
+
+        <article class="item">
+          <div>
+            <strong>InfluxDB</strong>
+            <div class="meta">Time-series database cho metric, IoT, monitoring và telemetry.</div>
+          </div>
+          <div class="btn-row">
+            <a class="btn primary" href="https://portal.influxdata.com/downloads/" target="_blank" rel="noreferrer">Download</a>
+            <a class="btn secondary" href="https://docs.influxdata.com/" target="_blank" rel="noreferrer">Docs</a>
+          </div>
+        </article>
+
+        <article class="item">
+          <div>
+            <strong>Firebase (Firestore / Realtime Database)</strong>
+            <div class="meta">Backend managed cho mobile/web, mạnh về realtime, auth, analytics.</div>
+          </div>
+          <div class="btn-row">
+            <a class="btn primary" href="https://firebase.google.com/docs" target="_blank" rel="noreferrer">Docs</a>
+            <a class="btn secondary" href="https://firebase.google.com/pricing" target="_blank" rel="noreferrer">Pricing</a>
+          </div>
+        </article>
+
+        <article class="item">
+          <div>
+            <strong>Supabase</strong>
+            <div class="meta">Backend-as-a-Service dựa trên PostgreSQL, có auth, storage, realtime.</div>
+          </div>
+          <div class="btn-row">
+            <a class="btn primary" href="https://supabase.com/dashboard/sign-up" target="_blank" rel="noreferrer">Get Started</a>
+            <a class="btn secondary" href="https://supabase.com/docs" target="_blank" rel="noreferrer">Docs</a>
+          </div>
+        </article>
+
+        <article class="item">
+          <div>
+            <strong>Apache CouchDB</strong>
+            <div class="meta">Document DB tập trung vào replication và offline-first sync.</div>
+          </div>
+          <div class="btn-row">
+            <a class="btn primary" href="https://couchdb.apache.org/" target="_blank" rel="noreferrer">Product</a>
+            <a class="btn secondary" href="https://docs.couchdb.org/" target="_blank" rel="noreferrer">Docs</a>
+          </div>
+        </article>
+
+        <article class="item">
+          <div>
+            <strong>Apache HBase</strong>
+            <div class="meta">Wide-column trên hệ Hadoop, phù hợp dữ liệu lớn theo cột.</div>
+          </div>
+          <div class="btn-row">
+            <a class="btn primary" href="https://hbase.apache.org/" target="_blank" rel="noreferrer">Product</a>
+            <a class="btn secondary" href="https://hbase.apache.org/book.html" target="_blank" rel="noreferrer">Docs</a>
+          </div>
+        </article>
+
+        <article class="item">
+          <div>
+            <strong>ArangoDB</strong>
+            <div class="meta">Multi-model DB (document + graph + key-value) linh hoạt cho nhiều use case.</div>
+          </div>
+          <div class="btn-row">
+            <a class="btn primary" href="https://arangodb.com/download-major/" target="_blank" rel="noreferrer">Download</a>
+            <a class="btn secondary" href="https://www.arangodb.com/docs/stable/" target="_blank" rel="noreferrer">Docs</a>
+          </div>
+        </article>
+
+        <article class="item">
+          <div>
+            <strong>Couchbase Capella</strong>
+            <div class="meta">Managed Couchbase cho ứng dụng realtime cần document + cache.</div>
+          </div>
+          <div class="btn-row">
+            <a class="btn primary" href="https://www.couchbase.com/products/capella/" target="_blank" rel="noreferrer">Product</a>
+            <a class="btn secondary" href="https://docs.couchbase.com/" target="_blank" rel="noreferrer">Docs</a>
+          </div>
+        </article>
+      </section>
+    </main>
+
+    <footer class="container">Bạn có thể mở SQL và Dev Tools từ menu trên cùng.</footer>
+  </body>
+</html>

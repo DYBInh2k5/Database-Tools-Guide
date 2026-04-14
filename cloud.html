@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cloud Databases</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="container">
+      <div class="topbar">
+        <div class="logo">Cloud Databases</div>
+        <nav>
+          <a href="index.html">Trang chủ</a>
+          <a href="relational.html">SQL</a>
+          <a href="nosql.html">NoSQL</a>
+          <a href="devtools.html">Dev Tools</a>
+          <a href="compare.html">Compare</a>
+          <a href="usecases.html">Use Cases</a>
+          <a href="cloud.html">Cloud</a>
+          <a href="installation.html">Cài đặt</a>
+          <a href="alltools.html">All Tools</a>
+        </nav>
+      </div>
+      <section class="hero">
+        <h1>Dịch vụ Database managed trên Cloud</h1>
+        <p>Giảm công vận hành, tăng tốc triển khai, phù hợp team muốn tập trung vào sản phẩm.</p>
+      </section>
+    </header>
+
+    <main class="container">
+      <h2 class="section-title">AWS</h2>
+      <section class="list">
+        <article class="item">
+          <div><strong>Amazon RDS</strong><div class="meta">Managed SQL cho PostgreSQL, MySQL, MariaDB, SQL Server, Oracle.</div></div>
+          <div class="btn-row"><a class="btn primary" href="https://aws.amazon.com/rds/" target="_blank" rel="noreferrer">Product</a><a class="btn secondary" href="https://docs.aws.amazon.com/rds/" target="_blank" rel="noreferrer">Docs</a></div>
+        </article>
+        <article class="item">
+          <div><strong>Amazon Aurora</strong><div class="meta">SQL managed hiệu năng cao, tương thích MySQL/PostgreSQL.</div></div>
+          <div class="btn-row"><a class="btn primary" href="https://aws.amazon.com/rds/aurora/" target="_blank" rel="noreferrer">Product</a><a class="btn secondary" href="https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/" target="_blank" rel="noreferrer">Docs</a></div>
+        </article>
+      </section>
+
+      <h2 class="section-title">Google Cloud</h2>
+      <section class="list">
+        <article class="item">
+          <div><strong>Cloud SQL</strong><div class="meta">Managed SQL cho PostgreSQL, MySQL, SQL Server.</div></div>
+          <div class="btn-row"><a class="btn primary" href="https://cloud.google.com/sql" target="_blank" rel="noreferrer">Product</a><a class="btn secondary" href="https://cloud.google.com/sql/docs" target="_blank" rel="noreferrer">Docs</a></div>
+        </article>
+        <article class="item">
+          <div><strong>AlloyDB for PostgreSQL</strong><div class="meta">Managed PostgreSQL cấp enterprise trên Google Cloud.</div></div>
+          <div class="btn-row"><a class="btn primary" href="https://cloud.google.com/alloydb" target="_blank" rel="noreferrer">Product</a><a class="btn secondary" href="https://cloud.google.com/alloydb/docs" target="_blank" rel="noreferrer">Docs</a></div>
+        </article>
+
+        <article class="item">
+          <div><strong>Firebase (Cloud Firestore)</strong><div class="meta">Managed NoSQL document DB, realtime sync, tích hợp mobile/web cực nhanh.</div></div>
+          <div class="btn-row"><a class="btn primary" href="https://firebase.google.com/" target="_blank" rel="noreferrer">Product</a><a class="btn secondary" href="https://firebase.google.com/docs/firestore" target="_blank" rel="noreferrer">Docs</a></div>
+        </article>
+      </section>
+
+      <h2 class="section-title">Microsoft Azure</h2>
+      <section class="list">
+        <article class="item">
+          <div><strong>Azure SQL Database</strong><div class="meta">Dịch vụ SQL managed cho hệ sinh thái Microsoft.</div></div>
+          <div class="btn-row"><a class="btn primary" href="https://azure.microsoft.com/products/azure-sql/database" target="_blank" rel="noreferrer">Product</a><a class="btn secondary" href="https://learn.microsoft.com/azure/azure-sql/database/" target="_blank" rel="noreferrer">Docs</a></div>
+        </article>
+        <article class="item">
+          <div><strong>Azure Database for PostgreSQL</strong><div class="meta">PostgreSQL managed với tích hợp tốt dịch vụ Azure.</div></div>
+          <div class="btn-row"><a class="btn primary" href="https://azure.microsoft.com/products/postgresql" target="_blank" rel="noreferrer">Product</a><a class="btn secondary" href="https://learn.microsoft.com/azure/postgresql/" target="_blank" rel="noreferrer">Docs</a></div>
+        </article>
+      </section>
+
+      <h2 class="section-title">BaaS / Startup-friendly</h2>
+      <section class="list">
+        <article class="item">
+          <div><strong>Supabase</strong><div class="meta">Managed PostgreSQL + Auth + Storage + Edge Functions, phù hợp MVP và sản phẩm tăng trưởng nhanh.</div></div>
+          <div class="btn-row"><a class="btn primary" href="https://supabase.com/" target="_blank" rel="noreferrer">Product</a><a class="btn secondary" href="https://supabase.com/docs" target="_blank" rel="noreferrer">Docs</a></div>
+        </article>
+
+        <article class="item">
+          <div><strong>Neon</strong><div class="meta">Serverless PostgreSQL với autoscaling và branch database cho workflow hiện đại.</div></div>
+          <div class="btn-row"><a class="btn primary" href="https://neon.tech/" target="_blank" rel="noreferrer">Product</a><a class="btn secondary" href="https://neon.tech/docs" target="_blank" rel="noreferrer">Docs</a></div>
+        </article>
+
+        <article class="item">
+          <div><strong>PlanetScale</strong><div class="meta">MySQL serverless dành cho ứng dụng scale lớn, workflow nhánh schema.</div></div>
+          <div class="btn-row"><a class="btn primary" href="https://planetscale.com/" target="_blank" rel="noreferrer">Product</a><a class="btn secondary" href="https://planetscale.com/docs" target="_blank" rel="noreferrer">Docs</a></div>
+        </article>
+
+        <article class="item">
+          <div><strong>Aiven</strong><div class="meta">Managed open-source data platform cho PostgreSQL, Kafka, Redis, OpenSearch.</div></div>
+          <div class="btn-row"><a class="btn primary" href="https://aiven.io/" target="_blank" rel="noreferrer">Product</a><a class="btn secondary" href="https://aiven.io/docs" target="_blank" rel="noreferrer">Docs</a></div>
+        </article>
+      </section>
+    </main>
+
+    <footer class="container">Mẹo: chọn managed DB nếu team nhỏ và ưu tiên tốc độ ra sản phẩm.</footer>
+  </body>
+</html>

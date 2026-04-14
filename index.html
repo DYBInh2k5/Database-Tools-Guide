@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trung tâm Công cụ Database</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="container">
+      <div class="topbar">
+        <div class="logo">Database Tools Hub</div>
+        <nav>
+          <a href="index.html">Trang chủ</a>
+          <a href="relational.html">SQL</a>
+          <a href="nosql.html">NoSQL</a>
+          <a href="devtools.html">Dev Tools</a>
+          <a href="compare.html">Compare</a>
+          <a href="usecases.html">Use Cases</a>
+          <a href="cloud.html">Cloud</a>
+          <a href="installation.html">Cài đặt</a>
+          <a href="alltools.html">All Tools</a>
+        </nav>
+      </div>
+      <section class="hero">
+        <span class="badge">Cập nhật 2026</span>
+        <h1>Trang tổng hợp công cụ Database và link tải chính thức</h1>
+        <p>
+          Bộ mini-site này giúp bạn tìm nhanh công cụ phù hợp, vào đúng trang download,
+          và đọc tài liệu chính thống cho SQL, NoSQL và công cụ vận hành.
+        </p>
+      </section>
+    </header>
+
+    <main class="container">
+      <section class="search-panel card">
+        <h3>Tìm nhanh công cụ</h3>
+        <p class="meta">Gõ tên hệ CSDL hoặc nhu cầu như: cache, graph, analytics, enterprise...</p>
+        <input class="search-input" data-search-input type="text" placeholder="Ví dụ: PostgreSQL, Redis, time-series" />
+      </section>
+
+      <section class="grid">
+        <article class="card" data-search-card data-search-text="postgresql mysql sql server mariadb oracle sqlite cockroachdb tidb yugabytedb singlestore db2 duckdb relational sql giao dich bao cao acid">
+          <h3>Relational (SQL)</h3>
+          <p>PostgreSQL, MySQL, SQL Server, MariaDB, Oracle, SQLite, CockroachDB, TiDB, YugabyteDB, SingleStore, Db2, DuckDB.</p>
+          <div class="btn-row">
+            <a class="btn primary" href="relational.html">Mở danh sách</a>
+          </div>
+        </article>
+
+        <article class="card" data-search-card data-search-text="mongodb redis cassandra opensearch neo4j dynamodb couchbase scylladb influxdb firebase supabase couchdb hbase arangodb nosql cache search graph realtime auth">
+          <h3>NoSQL</h3>
+          <p>MongoDB, Redis, Cassandra, OpenSearch, Neo4j, DynamoDB, Couchbase, InfluxDB, Firebase, Supabase, CouchDB, HBase, ArangoDB.</p>
+          <div class="btn-row">
+            <a class="btn primary" href="nosql.html">Mở danh sách</a>
+          </div>
+        </article>
+
+        <article class="card" data-search-card data-search-text="dbeaver datagrip tableplus pgadmin ssms beekeeper dbvisualizer flyway liquibase alembic prisma atlas sqitch grafana prometheus pmm elastic datadog new relic migration monitoring admin tool">
+          <h3>Admin + Developer Tools</h3>
+          <p>DBeaver, DataGrip, Flyway, Liquibase, Atlas, Sqitch, Grafana, Datadog và nhiều công cụ hỗ trợ.</p>
+          <div class="btn-row">
+            <a class="btn primary" href="devtools.html">Mở danh sách</a>
+          </div>
+        </article>
+
+        <article class="card" data-search-card data-search-text="compare so sanh lua chon benchmark chi phi van hanh cloud">
+          <h3>Compare nhanh</h3>
+          <p>Trang so sánh theo use case, mức vận hành, và độ phù hợp cloud-native.</p>
+          <div class="btn-row">
+            <a class="btn primary" href="compare.html">Mở trang Compare</a>
+          </div>
+        </article>
+
+        <article class="card" data-search-card data-search-text="use case ecommerce crm erp anti fraud recommendation telemetry logs">
+          <h3>Use Cases</h3>
+          <p>Gợi ý chọn database theo từng bài toán thực tế.</p>
+          <div class="btn-row">
+            <a class="btn primary" href="usecases.html">Mở Use Cases</a>
+          </div>
+        </article>
+
+        <article class="card" data-search-card data-search-text="aws azure gcp managed cloud database rds aurora cloud sql alloydb firebase supabase">
+          <h3>Cloud Databases</h3>
+          <p>Tổng hợp dịch vụ managed database trên AWS, Azure, Google Cloud, Firebase và Supabase.</p>
+          <div class="btn-row">
+            <a class="btn primary" href="cloud.html">Mở Cloud DB</a>
+          </div>
+        </article>
+
+        <article class="card" data-search-card data-search-text="cai dat cach dung extension vscode sqltools mssql mongodb redis neo4j">
+          <h3>Cài đặt và Cách dùng</h3>
+          <p>Hướng dẫn cài nhanh, cách sử dụng từng công cụ và extension tương thích.</p>
+          <div class="btn-row">
+            <a class="btn primary" href="installation.html">Mở hướng dẫn</a>
+          </div>
+        </article>
+
+        <article class="card" data-search-card data-search-text="all tools catalog filter database sql nosql cloud devtools">
+          <h3>All Tools Catalog</h3>
+          <p>Bảng tra cứu đầy đủ với bộ lọc theo nhóm và tìm kiếm realtime.</p>
+          <div class="btn-row">
+            <a class="btn primary" href="alltools.html">Mở Catalog</a>
+          </div>
+        </article>
+      </section>
+    </main>
+
+    <footer class="container">
+      Nguồn link được ưu tiên từ website chính thức của nhà phát hành.
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>

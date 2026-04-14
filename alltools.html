@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>All Database Tools</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="container">
+      <div class="topbar">
+        <div class="logo">All Tools Catalog</div>
+        <nav>
+          <a href="index.html">Trang chủ</a>
+          <a href="relational.html">SQL</a>
+          <a href="nosql.html">NoSQL</a>
+          <a href="devtools.html">Dev Tools</a>
+          <a href="compare.html">Compare</a>
+          <a href="usecases.html">Use Cases</a>
+          <a href="cloud.html">Cloud</a>
+          <a href="installation.html">Cài đặt</a>
+          <a href="alltools.html">All Tools</a>
+        </nav>
+      </div>
+      <section class="hero">
+        <span class="badge">Catalog tối ưu</span>
+        <h1>Tra cứu toàn bộ công cụ trong một trang</h1>
+        <p>Lọc theo nhóm công nghệ và tìm kiếm realtime để chọn nhanh stack phù hợp cho dự án.</p>
+      </section>
+    </header>
+
+    <main class="container">
+      <section class="search-panel card">
+        <h3>Tìm kiếm công cụ</h3>
+        <p class="meta">Ví dụ: serverless, graph, migration, PostgreSQL, monitoring...</p>
+        <input class="search-input" data-tool-search type="text" placeholder="Nhập tên công cụ hoặc từ khóa" />
+      </section>
+
+      <section class="filter-row">
+        <button class="chip active" data-filter-btn data-filter="all" type="button">Tất cả</button>
+        <button class="chip" data-filter-btn data-filter="sql" type="button">SQL</button>
+        <button class="chip" data-filter-btn data-filter="nosql" type="button">NoSQL</button>
+        <button class="chip" data-filter-btn data-filter="cloud" type="button">Cloud</button>
+        <button class="chip" data-filter-btn data-filter="devtools" type="button">Dev Tools</button>
+      </section>
+
+      <p class="meta">Kết quả: <strong data-tool-count>0</strong> công cụ</p>
+
+      <section class="grid" data-tool-list>
+        <article class="card" data-tool-item data-tool-category="sql" data-tool-text="postgresql relational sql acid oltp">
+          <h3>PostgreSQL</h3>
+          <p>SQL mạnh, cân bằng cho đa số hệ thống nghiệp vụ và analytics.</p>
+          <div class="btn-row"><a class="btn primary" href="https://www.postgresql.org/download/" target="_blank" rel="noreferrer">Download</a><a class="btn secondary" href="https://www.postgresql.org/docs/" target="_blank" rel="noreferrer">Docs</a></div>
+        </article>
+        <article class="card" data-tool-item data-tool-category="sql" data-tool-text="mysql relational web app">
+          <h3>MySQL</h3>
+          <p>Phổ biến cho web app và hệ thống cần vận hành đơn giản.</p>
+          <div class="btn-row"><a class="btn primary" href="https://dev.mysql.com/downloads/mysql/" target="_blank" rel="noreferrer">Download</a><a class="btn secondary" href="https://dev.mysql.com/doc/" target="_blank" rel="noreferrer">Docs</a></div>
+        </article>
+        <article class="card" data-tool-item data-tool-category="sql" data-tool-text="sql server microsoft enterprise">
+          <h3>SQL Server</h3>
+          <p>Tối ưu cho hệ sinh thái Microsoft và doanh nghiệp.</p>
+          <div class="btn-row"><a class="btn primary" href="https://www.microsoft.com/sql-server/sql-server-downloads" target="_blank" rel="noreferrer">Download</a><a class="btn secondary" href="https://learn.microsoft.com/sql/sql-server/" target="_blank" rel="noreferrer">Docs</a></div>
+        </article>
+        <article class="card" data-tool-item data-tool-category="sql" data-tool-text="cockroachdb tidb yugabytedb distributed sql">
+          <h3>Distributed SQL</h3>
+          <p>CockroachDB, TiDB, YugabyteDB cho scale đa vùng.</p>
+          <div class="btn-row"><a class="btn secondary" href="relational.html">Xem chi tiết</a></div>
+        </article>
+
+        <article class="card" data-tool-item data-tool-category="nosql" data-tool-text="mongodb document nosql schema flexible">
+          <h3>MongoDB</h3>
+          <p>Document database cho schema linh hoạt và phát triển nhanh.</p>
+          <div class="btn-row"><a class="btn primary" href="https://www.mongodb.com/try/download/community" target="_blank" rel="noreferrer">Download</a><a class="btn secondary" href="https://www.mongodb.com/docs/" target="_blank" rel="noreferrer">Docs</a></div>
+        </article>
+        <article class="card" data-tool-item data-tool-category="nosql" data-tool-text="redis cache key value session">
+          <h3>Redis</h3>
+          <p>In-memory key-value cho cache, session, queue nhẹ.</p>
+          <div class="btn-row"><a class="btn primary" href="https://redis.io/downloads/" target="_blank" rel="noreferrer">Download</a><a class="btn secondary" href="https://redis.io/docs/latest/" target="_blank" rel="noreferrer">Docs</a></div>
+        </article>
+        <article class="card" data-tool-item data-tool-category="nosql" data-tool-text="firebase supabase baas realtime auth">
+          <h3>Firebase & Supabase</h3>
+          <p>BaaS phổ biến cho mobile/web, auth, realtime, storage.</p>
+          <div class="btn-row"><a class="btn primary" href="https://firebase.google.com/docs" target="_blank" rel="noreferrer">Firebase</a><a class="btn secondary" href="https://supabase.com/docs" target="_blank" rel="noreferrer">Supabase</a></div>
+        </article>
+        <article class="card" data-tool-item data-tool-category="nosql" data-tool-text="neo4j graph recommendation fraud">
+          <h3>Neo4j</h3>
+          <p>Graph database cho recommendation và anti-fraud.</p>
+          <div class="btn-row"><a class="btn primary" href="https://neo4j.com/download-center/" target="_blank" rel="noreferrer">Download</a><a class="btn secondary" href="https://neo4j.com/docs/" target="_blank" rel="noreferrer">Docs</a></div>
+        </article>
+
+        <article class="card" data-tool-item data-tool-category="cloud" data-tool-text="aws rds aurora managed cloud database">
+          <h3>AWS RDS / Aurora</h3>
+          <p>Managed SQL cho hệ AWS, dễ scale và backup.</p>
+          <div class="btn-row"><a class="btn primary" href="https://aws.amazon.com/rds/" target="_blank" rel="noreferrer">RDS</a><a class="btn secondary" href="https://aws.amazon.com/rds/aurora/" target="_blank" rel="noreferrer">Aurora</a></div>
+        </article>
+        <article class="card" data-tool-item data-tool-category="cloud" data-tool-text="azure sql cloud sql alloydb cosmos db">
+          <h3>Azure / GCP Managed DB</h3>
+          <p>Cloud SQL, AlloyDB, Azure SQL, Cosmos DB cho môi trường cloud-native.</p>
+          <div class="btn-row"><a class="btn secondary" href="cloud.html">Xem chi tiết</a></div>
+        </article>
+        <article class="card" data-tool-item data-tool-category="cloud" data-tool-text="neon planetscale aiven serverless database">
+          <h3>Neon / PlanetScale / Aiven</h3>
+          <p>Các nền tảng serverless và managed hiện đại cho startup đến enterprise.</p>
+          <div class="btn-row"><a class="btn secondary" href="cloud.html">Xem chi tiết</a></div>
+        </article>
+
+        <article class="card" data-tool-item data-tool-category="devtools" data-tool-text="dbeaver datagrip tableplus pgadmin ssms dbvisualizer beekeeper">
+          <h3>SQL Clients & GUI</h3>
+          <p>DBeaver, DataGrip, TablePlus, pgAdmin, SSMS, DbVisualizer, Beekeeper.</p>
+          <div class="btn-row"><a class="btn secondary" href="devtools.html">Xem chi tiết</a></div>
+        </article>
+        <article class="card" data-tool-item data-tool-category="devtools" data-tool-text="flyway liquibase alembic prisma atlas sqitch migration">
+          <h3>Migration Stack</h3>
+          <p>Flyway, Liquibase, Alembic, Prisma Migrate, Atlas, Sqitch.</p>
+          <div class="btn-row"><a class="btn secondary" href="devtools.html">Xem chi tiết</a></div>
+        </article>
+        <article class="card" data-tool-item data-tool-category="devtools" data-tool-text="grafana prometheus datadog new relic pmm elastic monitoring observability">
+          <h3>Monitoring & Observability</h3>
+          <p>Grafana, Prometheus, Datadog, New Relic, PMM, Elastic Stack.</p>
+          <div class="btn-row"><a class="btn secondary" href="devtools.html">Xem chi tiết</a></div>
+        </article>
+      </section>
+    </main>
+
+    <footer class="container">Catalog này được tối ưu để shortlist công cụ nhanh trước khi POC.</footer>
+    <script src="script.js"></script>
+  </body>
+</html>
