@@ -41,5 +41,6 @@ Bao gồm cả các nền tảng hiện đại như Firebase, Supabase, Neon, Pl
 ## Deploy GitHub Pages (GitHub Actions)
 
 1. Đảm bảo repository dùng branch `main`.
-2. Vào Settings > Pages của repo, chọn Source là `GitHub Actions`.
-3. Push code lên `main`, workflow `deploy-pages.yml` sẽ tự deploy thư mục `site/`.
+2. Vào Settings > Pages của repo, chọn `Deploy from a branch`.
+3. Chọn branch `gh-pages` và folder `/ (root)`.
+4. Push code lên `main`, workflow `deploy-pages.yml` sẽ tự publish thư mục `site/` lên `gh-pages`.
